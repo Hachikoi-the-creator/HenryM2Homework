@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- getting the title in teh config file, whit ejs syntax -->
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <img id="laughImg" alt="" />
+
+      <h3>Understand Redux Challenge</h3>
+
+      <div id="joke" class="input-container joke">
+        <input type="text" name="change-name" id="name-input">
+        <button id="name-btn" class="btn">Change Name</button>
+      </div>
+
+      <button id="plus-btn" class="btn">Increment</button>
+      <button id="less-btn" class="btn">Decrement</button>
+    </div>
+  </body>
+
+</html>
